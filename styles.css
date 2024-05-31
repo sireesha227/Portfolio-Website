@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    /*background-color: #bface2;*/
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: #645cbb;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header a,.description a, .certificates a{
+    background-color: #bface2;
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin: 0.2rem;
+    font-weight: 700;
+    border: 2px solid #bface2;
+}
+
+.header a:hover,.description a:hover .work-description a{
+    border: 2px solid black;
+}
+
+.description{
+    border: 2px;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-description{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p,h1{
+    font-size: 1.1rem;
+    width: 100%;   
+    text-align: justify;
+}
+
+.description a, .certificates a{
+    background-color: #645cbb;
+    color: white;
+    border: #645cbb;
+}
+
+.pos-margin-top{
+    margin-top: 50px;
+}
+
+#profile-image{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border : 5px solid black;  
+    border-radius: 50%;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    background-color: #645cbb;
+    color: white;
+    height: 130px;
+    width: 100%;
+    bottom:-130px;
+    margin-top: 2rem;
+}
+
+#contact-heading{
+    height:20px;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;;
+}
+
+.contact-info{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.contact-details{
+    font-size: 1.1rem;
+}
+.social-links{
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.fa{
+    padding: 0.1rem;
+    margin:0.1rem;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.fa-github{
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-linkedin{
+    background-color: #007bb5;
+    border-radius: 10%;
+}
+
+/* Added for about.html */
+
+.about-description{
+    height: 100vh;
+    font-size: 1.1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.description-size{
+    padding-top: 2rem;
+}
+
+
+/* Style added for experience.html */
+
+.page-heading{
+    background-color: #a084dc;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.work{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+.work-description{
+    border: 2px;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+
+.work-description ul{
+    padding-left: 2rem;
+}
+
+/** Added for projects.html **/
+
+.projects{
+    background-color: #ebc7e6;
+    margin: 2rem 2rem 0rem 2rem;
+
+}
+.projects h3,h4{
+    display: inline;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Responsive styles for smaller screens */
+    .welcome-description {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .description {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .about-description {
+        margin: 0; /* Reset margin for smaller screens */
+    }
+
+    * a {
+        font-size: 14px; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Responsive styles for tablets and larger */
+    .welcome-description {
+        width: 50%; /* Reset width for tablets */
+    }
+
+    .description {
+        padding: 1.5rem; /* Reset padding for tablets */
+    }
+
+    .about-description {
+        margin-left: 50px; /* Adjust margin for tablets */
+        margin-right: 50px;
+    }
+
+    * a{
+        font-size: 16px; /* Reset font size for tablets and larger */
+    }
+}
+
